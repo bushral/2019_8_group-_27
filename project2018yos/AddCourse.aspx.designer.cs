@@ -22,13 +22,22 @@ namespace project2018yos {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// lblAddCourse control.
+        /// Image1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAddCourse;
+        protected global::System.Web.UI.WebControls.Image Image1;
+        
+        /// <summary>
+        /// HyperLink1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
         
         /// <summary>
         /// msg control.
@@ -38,6 +47,42 @@ namespace project2018yos {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label msg;
+        
+        /// <summary>
+        /// TextBoxDepartment control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxDepartment;
+        
+        /// <summary>
+        /// TextBoxYear control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxYear;
+        
+        /// <summary>
+        /// TextBoxSemester control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxSemester;
+        
+        /// <summary>
+        /// TextBoxName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxName;
         
         /// <summary>
         /// Txtid control.
@@ -67,13 +112,13 @@ namespace project2018yos {
         protected global::System.Web.UI.WebControls.TextBox TextBoxhour;
         
         /// <summary>
-        /// TextBoxName control.
+        /// txtHour2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxName;
+        protected global::System.Web.UI.WebControls.TextBox txtHour2;
         
         /// <summary>
         /// TextBoxCreadits control.
@@ -85,15 +130,6 @@ namespace project2018yos {
         protected global::System.Web.UI.WebControls.TextBox TextBoxCreadits;
         
         /// <summary>
-        /// TextBoxDepartment control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxDepartment;
-        
-        /// <summary>
         /// TextBoxMandatory control.
         /// </summary>
         /// <remarks>
@@ -103,22 +139,40 @@ namespace project2018yos {
         protected global::System.Web.UI.WebControls.TextBox TextBoxMandatory;
         
         /// <summary>
-        /// TextBoxYear control.
+        /// txtLec control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxYear;
+        protected global::System.Web.UI.WebControls.TextBox txtLec;
         
         /// <summary>
-        /// TextBoxSemester control.
+        /// txtRegister control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxSemester;
+        protected global::System.Web.UI.WebControls.TextBox txtRegister;
+        
+        /// <summary>
+        /// txtMaxNum control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtMaxNum;
+        
+        /// <summary>
+        /// txtLecName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtLecName;
         
         /// <summary>
         /// btnAdd control.

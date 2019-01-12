@@ -1,4 +1,5 @@
-﻿using System;
+﻿using project2018yos.classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,8 +17,8 @@ namespace project2018yos
 
         protected void btnDelete_Click(object sender, EventArgs e)
         {
-            Courses l = new Courses(txtDeleteCourse.Text);
-            if (l.DeleteHotel())
+            DepartmentCourses l = new DepartmentCourses(txtDeleteCourse.Text);
+            if (l.DeleteCourse())
             {
                 lblMSN.Text = "The Course has been delete";
                 lblMSN.Visible = true;

@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="StudentMaster.master.cs" Inherits="project2018yos.StudentMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="Styles.css" />
+    <script type="text/javascript" src="js.js"></script>
+    <style type="text/css">
+        .auto-style1 {
+            background-image: url('Image/header-banner-2-2.jpg');
+            background-repeat: no-repeat; 
+             background-size:cover;
+             display:flex;
+          //  background-attachment: inherit; 
+            margin-bottom: 100px;
+            margin-top:0;
+
+            top:0;
+            left:0;
+            right:0;
+            width:100%;
+            height: 254px;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" class="auto-style1" runat="server">
+        <span style="font-size:30px;cursor:pointer"onclick="openNavmenu()">&#9776; Menu</span>
+    <div class="sidenavmenu" id="mySidenavmenu">
+        <a href="#" onclick="closeNav()">x</a>
+        <a href="PinrtCourses.aspx">My Courses</a>
+        <a href="CourseRegistering.aspx">Register for Courses</a>
+        <a href="DeleteStdById.aspx">Delete Course</a>
+        <a href="MandatoryCoursesStudents.aspx">Mandatory Courses</a>
+       
+        </div>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        &nbsp;<asp:ImageButton ID="imgLogout" runat="server" Height="25px" ImageUrl="~/Image/shutdown.png" OnClick="imgLogout_Click" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                <br />
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+        
+        </asp:ContentPlaceHolder>
+    
+    </form>
+</body>
+</html>

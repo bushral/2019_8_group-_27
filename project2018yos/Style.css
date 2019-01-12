@@ -1,0 +1,126 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+section{
+    background-image:url("Image/bridge.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.container{
+    width:47vw;
+    height:57vh;
+    background-image:url("Image/bridge.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    position:relative;
+}
+.container .inner1{
+    width:50%;
+    height:100%;
+    position:absolute;
+    right:0;
+    background:rgba(255,252,252,0.92);
+    text-align:center;
+    //margin-top:10%;
+}
+h3{
+    font-size:2.5vw;
+    font-family:'Pacifico';
+    margin-bottom:13%;
+    margin-top:6%
+}
+input[type=text],input[type=password]{
+    width:80%;
+    height:10%;
+    margin-bottom:3%;
+    border:0;
+    background-color:transparent;
+    border-bottom:1px solid #E19BE3;
+
+}
+input[placeholder]{
+    font-size:1.4vw;
+    padding-left:3%;
+    font-family:'Crete Round';
+}
+.btn{
+    width:40%;
+    height:10%;
+    margin-bottom:9vh;
+    font-family:'Crete Round';
+    font-size:1.3vw;
+    background-color:#E19BE3;
+    color:white;
+    border:1px solid;
+
+}
+
+span{
+    font-size:2vw;
+    font-family:bitter;
+    color:black;
+    display:block;
+}
+.container .inner2{
+ 
+    width:50%;
+    height:100%;
+    position:absolute;
+   // left:0;
+    background:rgba(255,252,252,0.92);
+    text-align:center;
+  //  margin-top:5%;
+
+}
+
+.container2{
+    width:47vw;
+    height:57vh;
+    background-image:url("Image/bridge.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    position:relative;
+}
+
+/*
+.btnLogAsAdmin{
+    width:40%;
+    height:10%;
+    margin-bottom:9vh;
+    font-family:'Crete Round';
+    font-size:1.3vw;
+    background-color:#EA0F0F;
+    color:white;
+    border:1px solid;
+}
+
+.btnLogAsLecture{
+      width:40%;
+    height:10%;
+    margin-bottom:9vh;
+    font-family:'Crete Round';
+    font-size:1.3vw;
+    background-color:#EA0F0F;
+    color:white;
+    border:1px solid;
+}
+.btnLogAsStudent {
+    width: 40%;
+    height: 10%;
+    margin-bottom: 9vh;
+    font-family: 'Crete Round';
+    font-size: 1.3vw;
+    background-color: #EA0F0F;
+    color: white;
+    border: 1px solid;
+}*/
+
+.auto-style2{
+    left:0;
+}

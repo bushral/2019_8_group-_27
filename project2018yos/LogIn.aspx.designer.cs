@@ -10,7 +10,7 @@
 namespace project2018yos {
     
     
-    public partial class LogIn {
+    public partial class Login {
         
         /// <summary>
         /// form1 control.
@@ -22,31 +22,31 @@ namespace project2018yos {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// lblLogIn control.
+        /// btnLogAsAdmin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLogIn;
+        protected global::System.Web.UI.WebControls.Button btnLogAsAdmin;
         
         /// <summary>
-        /// lblMSN control.
+        /// btnLogAsLecture control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMSN;
+        protected global::System.Web.UI.WebControls.Button btnLogAsLecture;
         
         /// <summary>
-        /// lblUserName control.
+        /// btnLogAsStudent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUserName;
+        protected global::System.Web.UI.WebControls.Button btnLogAsStudent;
         
         /// <summary>
         /// txtUserName control.
@@ -58,15 +58,6 @@ namespace project2018yos {
         protected global::System.Web.UI.WebControls.TextBox txtUserName;
         
         /// <summary>
-        /// lblID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblID;
-        
-        /// <summary>
         /// txtID control.
         /// </summary>
         /// <remarks>
@@ -76,12 +67,12 @@ namespace project2018yos {
         protected global::System.Web.UI.WebControls.TextBox txtID;
         
         /// <summary>
-        /// btnLogIn control.
+        /// lblMSN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogIn;
+        protected global::System.Web.UI.WebControls.Label lblMSN;
     }
 }

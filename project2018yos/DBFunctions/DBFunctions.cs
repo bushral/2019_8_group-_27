@@ -8,7 +8,7 @@ using System.Configuration;
 
 namespace WebApplication1 
 {
-    class DBFunctions
+    public class DBFunctions
     {
 
         public DBFunctions()
@@ -25,7 +25,12 @@ namespace WebApplication1
         {
             OleDbConnection conObj = new OleDbConnection();//متغير لفتح الرابط
             // the fil need to be on the desktop
-            conObj.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\LENOVO\Source\Repos\example\project2018yos\Project2018\project2018yos\DataApp\DatabaseProject2018.accdb;Persist Security Info=False;"; // نعطيه الرابط
+            //conObj.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\LENOVO\Desktop\2019_8_group_#27\2019_8_group-_27\project2018yos\DataApp\DatabaseProject2018.accdb;Persist Security Info=False;"; // نعطيه الرابط
+
+            //Access File Of The Database Exists in The Project
+            conObj.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\LENOVO\Downloads\2019_8_group-_27\project2018yos\DataApp\DatabaseProject2018.accdb;Persist Security Info=False;";
+
+
             conObj.Open();//فتح الرابط
             return conObj;
 
@@ -62,6 +67,23 @@ namespace WebApplication1
         {
             DataTable dt = DBFunctions.SelectFromTable(sqlString);
             return double.Parse(dt.Rows[0][0].ToString());
+        }
+
+        public static DataTable CopyDataTable(DataTable dtSource, int iRowsNeeded)
+        {
+
+            if (dtSource.Rows.Count > iRowsNeeded)
+            {
+                // cloned to get the structure of source
+                DataTable dtDestination = dtSource.Clone();
+                for (int i = 0; i < iRowsNeeded; i++)
+                {
+                    dtDestination.ImportRow(dtSource.Rows[i]);
+                }
+                return dtDestination;
+            }
+            else
+                return dtSource;
         }
     }
 

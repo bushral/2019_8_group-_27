@@ -31,13 +31,13 @@ namespace project2018yos {
         protected global::System.Web.UI.WebControls.Label LBLAdmibRoom;
         
         /// <summary>
-        /// btnSoftware control.
+        /// btnPrintCourses control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSoftware;
+        protected global::System.Web.UI.WebControls.Button btnPrintCourses;
         
         /// <summary>
         /// btnDeleteCourse control.
@@ -49,24 +49,6 @@ namespace project2018yos {
         protected global::System.Web.UI.WebControls.Button btnDeleteCourse;
         
         /// <summary>
-        /// btnLogOutAdmin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogOutAdmin;
-        
-        /// <summary>
-        /// btnMechanical control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnMechanical;
-        
-        /// <summary>
         /// btnAddCourse control.
         /// </summary>
         /// <remarks>
@@ -76,12 +58,57 @@ namespace project2018yos {
         protected global::System.Web.UI.WebControls.Button btnAddCourse;
         
         /// <summary>
-        /// btnBulid control.
+        /// btnUpdateCourses control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBulid;
+        protected global::System.Web.UI.WebControls.Button btnUpdateCourses;
+        
+        /// <summary>
+        /// btnMandCourses control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnMandCourses;
+        
+        /// <summary>
+        /// btnHourStudent control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnHourStudent;
+        
+        /// <summary>
+        /// btnPrintStudLec control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnPrintStudLec;
+        
+        /// <summary>
+        /// btnLogOutAdmin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnLogOutAdmin;
+        
+        /// <summary>
+        /// Image1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image1;
     }
 }

@@ -1,0 +1,80 @@
+﻿*{
+    //margin:0;
+    padding:0;
+}
+.btn{
+    margin-top:0;
+    width:40%;
+    height:10%;
+    margin-bottom:5vh;
+    font-family:'Crete Round';
+    font-size:1.3vw;
+    background-color:#95A5A6;
+    color:white;
+    border:1px solid;
+
+}
+.ss{
+     background-image:url("Image/book.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:100vw;
+    height:100vh;
+    display:inherit;
+    justify-content:center;
+    align-items:center;
+}
+.mc{
+     background-image:url("Image/pincle.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:100vw;
+    height:100vh;
+    display:inherit;
+    justify-content:center;
+    align-items:center;
+}
+.hcs{
+
+    background-image:url("Image/tools.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:100vw;
+    height:100vh;
+    display:inherit;
+    justify-content:center;
+    align-items:center;
+}
+
+.slc{
+         background-image:url("Image/lamp.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:100vw;
+    height:100vh;
+    display:inherit;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.deleteCourse{
+     background-image:url("Image/books.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:100vw;
+    height:100vh;
+    display:inherit;
+    justify-content:center;
+    align-items:center;
+}
+
+.ss.grid{
+    align-items:center;
+    margin-bottom:0;
+}
+
+.grid{
+     align-items:center;
+     margin-bottom:30px;
+}

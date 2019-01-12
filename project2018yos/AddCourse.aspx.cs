@@ -1,4 +1,5 @@
-﻿using System;
+﻿using project2018yos.classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -23,7 +24,7 @@ namespace project2018yos
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Courses c = new Courses(Txtid.Text, TxtDay.Text, TextBoxhour.Text, TextBoxName.Text, Convert.ToInt32(TextBoxCreadits.Text), TextBoxDepartment.Text, TextBoxMandatory.Text, TextBoxYear.Text, TextBoxSemester.Text);
+            DepartmentCourses c = new DepartmentCourses(TextBoxDepartment.Text, TextBoxYear.Text, TextBoxSemester.Text, TextBoxName.Text, (Txtid.Text), TxtDay.Text, TextBoxhour.Text, txtHour2.Text, TextBoxCreadits.Text,TextBoxMandatory.Text,txtLec.Text,txtRegister.Text,txtMaxNum.Text,txtLecName.Text);
             if (c.insertCourse())
             {
                 msg.Text = "has been add";
@@ -31,12 +32,17 @@ namespace project2018yos
                 Txtid.Text = "";
                 TxtDay.Text = "";
                 TextBoxhour.Text = "";
+                txtHour2.Text = "";
                 TextBoxName.Text = "";
                 TextBoxCreadits.Text = "";
                 TextBoxDepartment.Text = "";
                 TextBoxMandatory.Text = "";
                 TextBoxYear.Text = "";
                 TextBoxSemester.Text = "";
+                txtLec.Text = "";
+                txtRegister.Text = "";
+                txtMaxNum.Text = "";
+                txtLecName.Text = "";
             }
 
             else

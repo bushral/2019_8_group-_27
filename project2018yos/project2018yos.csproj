@@ -66,19 +66,59 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddCourse.aspx" />
     <Content Include="AdminRoom.aspx" />
+    <Content Include="AdminRoom.css" />
+    <Content Include="CourseRegistering.aspx" />
+    <Content Include="CoursresOfLuctur.aspx" />
     <Content Include="DataApp\DatabaseProject2018.accdb" />
     <Content Include="DeleteCourse.aspx" />
-    <Content Include="HomePage.aspx" />
+    <Content Include="DeleteStdById.aspx" />
+    <Content Include="EnrollLecById.aspx" />
+    <Content Include="HoursOfStudents.aspx" />
     <Content Include="Image\Abstractb.jpg" />
+    <Content Include="Image\AddCourse.png" />
+    <Content Include="Image\admin.jpg" />
+    <Content Include="Image\Admin.png" />
+    <Content Include="Image\banner-982162__340.jpg" />
     <Content Include="Image\blue.png" />
     <Content Include="Image\blue2.png" />
+    <Content Include="Image\book.jpg" />
+    <Content Include="Image\books.jpg" />
+    <Content Include="Image\bridge.jpg" />
+    <Content Include="Image\circle.png" />
+    <Content Include="Image\colorful.jpg" />
+    <Content Include="Image\colorstudy.png" />
     <Content Include="Image\Daimon.jpg" />
+    <Content Include="Image\desk.jpg" />
+    <Content Include="Image\dreambanner.jpg" />
+    <Content Include="Image\educat.jpg" />
+    <Content Include="Image\Glass-Panel-Transparent-PNG.png" />
+    <Content Include="Image\header-banner-2-2.jpg" />
+    <Content Include="Image\inspirational.jpg" />
+    <Content Include="Image\lamp.png" />
     <Content Include="Image\login-icon.png" />
-    <Content Include="LectureRoom.aspx" />
-    <Content Include="LogInStudent.aspx" />
+    <Content Include="Image\MAN.png" />
+    <Content Include="Image\Panel-Colour-Options-Gallery-5.jpg" />
+    <Content Include="Image\pincle.jpg" />
+    <Content Include="Image\shutdown.png" />
+    <Content Include="Image\stars.jpg" />
+    <Content Include="Image\study.jpg" />
+    <Content Include="Image\tools.jpg" />
+    <Content Include="js.js" />
+    <Content Include="LectureRegistring.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="main.css" />
+    <Content Include="mainAdmin.css" />
+    <Content Include="MandatoryCoursesAdmin.aspx" />
+    <Content Include="MandatoryCoursesStudents.aspx" />
+    <Content Include="MandatoryLectCourse.aspx" />
     <Content Include="packages.config" />
-    <Content Include="AddCourse.aspx" />
+    <Content Include="PrintCoursesAdmin.aspx" />
+    <Content Include="PrintLecCourses.aspx" />
+    <Content Include="StudentArea.aspx" />
+    <Content Include="StudentMaster.Master" />
+    <Content Include="LectureM.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -87,13 +127,22 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DataApp\Database1.accdb" />
-    <Content Include="LogIn.aspx" />
-    <Content Include="StudentRoom.aspx" />
+    <Content Include="PinrtCourses.aspx" />
+    <Content Include="StudentCourses.aspx" />
+    <Content Include="Style.css" />
+    <Content Include="Styles.css" />
+    <Content Include="UpdateCourses.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin.cs" />
+    <Compile Include="AddCourse.aspx.cs">
+      <DependentUpon>AddCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCourse.aspx.designer.cs">
+      <DependentUpon>AddCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classes\Admin.cs" />
     <Compile Include="AdminRoom.aspx.cs">
       <DependentUpon>AdminRoom.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -101,7 +150,24 @@
     <Compile Include="AdminRoom.aspx.designer.cs">
       <DependentUpon>AdminRoom.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Courses.cs" />
+    <Compile Include="classes\Courses.cs" />
+    <Compile Include="classes\DepartmentCourses.cs" />
+    <Compile Include="classes\LectureOfCourse.cs" />
+    <Compile Include="classes\StudentAtCourse.cs" />
+    <Compile Include="CourseRegistering.aspx.cs">
+      <DependentUpon>CourseRegistering.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CourseRegistering.aspx.designer.cs">
+      <DependentUpon>CourseRegistering.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoursresOfLuctur.aspx.cs">
+      <DependentUpon>CoursresOfLuctur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoursresOfLuctur.aspx.designer.cs">
+      <DependentUpon>CoursresOfLuctur.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DBFunctions\DBFunctions.cs" />
     <Compile Include="DeleteCourse.aspx.cs">
       <DependentUpon>DeleteCourse.aspx</DependentUpon>
@@ -110,50 +176,120 @@
     <Compile Include="DeleteCourse.aspx.designer.cs">
       <DependentUpon>DeleteCourse.aspx</DependentUpon>
     </Compile>
-    <Compile Include="HomePage.aspx.cs">
-      <DependentUpon>HomePage.aspx</DependentUpon>
+    <Compile Include="DeleteStdById.aspx.cs">
+      <DependentUpon>DeleteStdById.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="HomePage.aspx.designer.cs">
-      <DependentUpon>HomePage.aspx</DependentUpon>
+    <Compile Include="DeleteStdById.aspx.designer.cs">
+      <DependentUpon>DeleteStdById.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Lecture.cs" />
-    <Compile Include="LectureRoom.aspx.cs">
-      <DependentUpon>LectureRoom.aspx</DependentUpon>
+    <Compile Include="EnrollLecById.aspx.cs">
+      <DependentUpon>EnrollLecById.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="LectureRoom.aspx.designer.cs">
-      <DependentUpon>LectureRoom.aspx</DependentUpon>
+    <Compile Include="EnrollLecById.aspx.designer.cs">
+      <DependentUpon>EnrollLecById.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LogIn.aspx.cs">
-      <DependentUpon>LogIn.aspx</DependentUpon>
+    <Compile Include="classes\Lecture.cs" />
+    <Compile Include="HoursOfStudents.aspx.cs">
+      <DependentUpon>HoursOfStudents.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="LogIn.aspx.designer.cs">
-      <DependentUpon>LogIn.aspx</DependentUpon>
+    <Compile Include="HoursOfStudents.aspx.designer.cs">
+      <DependentUpon>HoursOfStudents.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LogInStudent.aspx.cs">
-      <DependentUpon>LogInStudent.aspx</DependentUpon>
+    <Compile Include="LectureM.Master.cs">
+      <DependentUpon>LectureM.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="LogInStudent.aspx.designer.cs">
-      <DependentUpon>LogInStudent.aspx</DependentUpon>
+    <Compile Include="LectureM.Master.designer.cs">
+      <DependentUpon>LectureM.Master</DependentUpon>
+    </Compile>
+    <Compile Include="LectureRegistring.aspx.cs">
+      <DependentUpon>LectureRegistring.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LectureRegistring.aspx.designer.cs">
+      <DependentUpon>LectureRegistring.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MandatoryCoursesAdmin.aspx.cs">
+      <DependentUpon>MandatoryCoursesAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MandatoryCoursesAdmin.aspx.designer.cs">
+      <DependentUpon>MandatoryCoursesAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MandatoryCoursesStudents.aspx.cs">
+      <DependentUpon>MandatoryCoursesStudents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MandatoryCoursesStudents.aspx.designer.cs">
+      <DependentUpon>MandatoryCoursesStudents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MandatoryLectCourse.aspx.cs">
+      <DependentUpon>MandatoryLectCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MandatoryLectCourse.aspx.designer.cs">
+      <DependentUpon>MandatoryLectCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PinrtCourses.aspx.cs">
+      <DependentUpon>PinrtCourses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PinrtCourses.aspx.designer.cs">
+      <DependentUpon>PinrtCourses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintCoursesAdmin.aspx.cs">
+      <DependentUpon>PrintCoursesAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrintCoursesAdmin.aspx.designer.cs">
+      <DependentUpon>PrintCoursesAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintLecCourses.aspx.cs">
+      <DependentUpon>PrintLecCourses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrintLecCourses.aspx.designer.cs">
+      <DependentUpon>PrintLecCourses.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StudentRoom.aspx.cs">
-      <DependentUpon>StudentRoom.aspx</DependentUpon>
+    <Compile Include="StudentArea.aspx.cs">
+      <DependentUpon>StudentArea.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="StudentRoom.aspx.designer.cs">
-      <DependentUpon>StudentRoom.aspx</DependentUpon>
+    <Compile Include="StudentArea.aspx.designer.cs">
+      <DependentUpon>StudentArea.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Students.cs" />
-    <Compile Include="AddCourse.aspx.cs">
-      <DependentUpon>AddCourse.aspx</DependentUpon>
+    <Compile Include="StudentCourses.aspx.cs">
+      <DependentUpon>StudentCourses.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddCourse.aspx.designer.cs">
-      <DependentUpon>AddCourse.aspx</DependentUpon>
+    <Compile Include="StudentCourses.aspx.designer.cs">
+      <DependentUpon>StudentCourses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMaster.Master.cs">
+      <DependentUpon>StudentMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentMaster.Master.designer.cs">
+      <DependentUpon>StudentMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="classes\Students.cs" />
+    <Compile Include="UpdateCourses.aspx.cs">
+      <DependentUpon>UpdateCourses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateCourses.aspx.designer.cs">
+      <DependentUpon>UpdateCourses.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
