@@ -154,7 +154,7 @@ namespace UnitTestProject
         public void GetExistDepartmentByCourseID()
         {
             //Create Query And Get Data From Database
-            string query = "select Department from [Courses] where ID='SoftArchi'";   
+            string query = "select Department from [DepartmentCourses] where IdCourse='SoftArchi'";   
             string department = GetDataFromDatabase(query, "Department");
 
             bool result = department.ToLower().Equals("software");
@@ -166,7 +166,7 @@ namespace UnitTestProject
         public void GetDoesntExistDepartmentByCourseID()
         {
             //Create Query And Get Data From Database
-            string query = "select Department from [Courses] where ID='123'";
+            string query = "select Department from [DepartmentCourses] where IdCourse='123'";
             string department = GetDataFromDatabase(query, "Department");
 
             bool result = department.ToLower().Equals("software");

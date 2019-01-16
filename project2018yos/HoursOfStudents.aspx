@@ -49,7 +49,7 @@
                         <table class="auto-style1">
                             <tr>
                                 <td class="auto-style2">
-                                    <asp:Label ID="lblTotalHour" runat="server" Text="Total Hours:"></asp:Label>
+                                    <asp:Label ID="lblTotalHour" runat="server" Text="Total Credits:"></asp:Label>
                                     <asp:Label ID="lblTotal" runat="server" Text="Label"></asp:Label>
                                 </td>
                                 <td class="auto-style2"></td>
